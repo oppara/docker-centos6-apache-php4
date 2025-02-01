@@ -1,0 +1,14 @@
+services:
+
+  web:
+    image: oppara/centos6-apache-php4
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    container_name: try-php4
+    platform: linux/amd64 # for arm mac
+    ports:
+      - 8080:80
+    volumes:
+      - ./webroot:/var/www/html
+
