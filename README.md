@@ -1,6 +1,6 @@
 # docker-centos6-apache-php4
 
-Running PHP 4 on Apache with Docker
+Running PHP4 with Apache on Docker
 
     % make up
     % make open
